@@ -1,2 +1,2 @@
 # Spotify-Clone
-# Practice project created using HTML and vanilla CSS
+Practice project created using HTML and vanilla CSS
