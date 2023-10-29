@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="boxer">
+                    <p class="box-1">Create your first playlist</p>
+                    <p class="box-2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="boxer">
+                    <p class="box-1">Let's find some podcasts to follow</p>
+                    <p class="box-2">We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="div1">
+                    <img src="./assets/backward_icon.png" alt="">
+                    <img src="./assets/forward_icon.png" class="hide" alt="">
+                </div>
+                <div class="div2">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge dark"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Top 50 - Global Hits</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <h2>Top 50 Hits in India</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Mahiye Jinna Sohna Lyrics by Darshan Raval...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Mere Pas Tum Ho</p>
+                    <p class="card-info">Mere Pas Tum Ho 1 minute lo-fi mix by...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Naa Ready</p>
+                    <p class="card-info">One of the best songs from Alter Ego...</p>
+                </div>
+            </div>
+            <h2>Top 50 Hip Hop</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Top 100 - Global Hits</p>
+                    <p class="card-info">Collection of most played songs...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Top 50 - Indian Pop</p>
+                    <p class="card-info">Top Pop songs people listen in India...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card7.png" class="card-img" alt="">
+                    <img src="./assets/Spotify-Play-Button.png" alt="" class="spotify">
+                    <p class="card-title">Top 100 - Indian Hits</p>
+                    <p class="card-info">Collection of most played in India...</p>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/card7.png" alt="" class="album-art">
+                <div class="song-dets">
+                    <p class="song-name">Blinding Lights</p>
+                    <p class="song-artist">The Weekend</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="player">
+                <div class="play-controls">
+                    <img src="./assets/player_icon1.png" alt="" class="play-control-icon">
+                    <img src="./assets/player_icon2.png" alt="" class="play-control-icon">
+                    <img src="./assets/player_icon3.png" alt="" class="play-control-icon play">
+                    <img src="./assets/player_icon4.png" alt="" class="play-control-icon">
+                    <img src="./assets/player_icon5.png" alt="" class="play-control-icon">
+                </div>
+                <div class="progress">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" class="playback" min="0" max="100" step="1">
+                    <span class="total-time">3:45</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-microphone c-icons" title="Lyrics"></i>
+                <i class="fa-solid fa-lines-leaning c-icons" title="Queue"></i>
+                <i class="fa-solid fa-laptop c-icons" title="Connect to a device"></i>
+                <i class="fa-solid fa-volume-high c-icons" title="Volume"></i>
+                <div class="volume-b"><input type="range" class="volume"></div>
+                <i class="fa-solid fa-camera-retro c-icons" title="Picture in picture"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/76368995f9.js" crossorigin="anonymous"></script>
+</body>
+</html>

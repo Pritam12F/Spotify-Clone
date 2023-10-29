@@ -1,0 +1,404 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar{
+    background-color: #000;
+    width: 353px;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    border-radius: 1rem;
+    overflow: auto;
+    height: 87%;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 111.99px;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.nav-option{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.8rem;
+    opacity: 0.7;
+}
+.nav-option i{
+    font-size: 1.3rem;
+}
+.nav-option a{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    height: 67%;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+}
+.icons i{
+    opacity: 0.6;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.boxer{
+    background-color: #232323;
+    color: white;
+    height: 150px;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.boxer .box-1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.boxer .box-2{
+    font-size: 0.80rem;
+    font-weight: 600;
+}
+.badge{
+    background-color: white;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.6rem;
+}
+.boxer .badge:hover{
+    transform: scale(1.03);
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    z-index: 1;
+}
+.div1 img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+}
+.div2{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div2 button,i{
+    margin-left: 1.5rem;
+}
+.div2 .badge i{
+    transform: translateX(-12px);
+}
+.dark{
+    background-color: #000;
+    color: white;
+    padding-right: 18px;
+}
+@media (max-width:1000px)
+{
+    .hide{
+        display: none;
+    }
+}
+.div1 img:hover{
+    opacity: 1;
+}
+.div2 .badge:hover{
+    transform: scale(1.03);
+}
+.div2 .fa-user:hover{
+    transform: scale(1.03);
+    color: #1bd760;
+}
+.card{
+    background-color: #232323;
+    width: 200px;
+    height: 290px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.main-content h2{
+    margin-left: 1.5rem;
+}
+.card img{
+    width: 100%;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 8px #1bd760;
+}
+.footer{
+    height: 100px;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.85rem;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.controls{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.play-control-icon{
+    height: 0.9rem;
+    width: 0.9rem;
+    margin: 0 1rem;
+    opacity: 0.6;
+}
+.play{
+    height: 2.1rem;
+    width: 2.1rem;
+    opacity: 1;
+}
+.play-controls{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 13px;
+}
+.playback{
+    width: 600px;
+    appearance: none;
+    background-color: transparent;
+}
+.progress{
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+}
+.playback::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+.playback::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-top: -0.25rem;
+}
+.play-control-icon:hover{
+    opacity: 1;
+}
+.play:hover{
+    transform: scale(1.1);
+}
+.playback::-webkit-slider-runnable-track:hover{
+    background-color:#1bd760;
+    box-shadow: 5px 5px 8px #1bd760;
+}
+.curr-time,.total-time{
+    font-size: 0.75rem;
+}
+.album{
+    display: flex;
+    margin: 1rem 1rem;
+}
+.album-art{
+    border-radius: 0.5rem;
+}
+.song-dets{
+    margin: 0 1rem;
+}
+.song-name{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.song-artist{
+    font-size: 0.65rem;
+}
+.fa-heart{
+    align-self: center;
+    margin-left: -2px;
+}
+.fa-heart:hover{
+    color: #1bd760;
+    box-shadow: 10px 10px 40px #1bd760;
+}
+.song-name:hover{
+    text-decoration: underline;
+}
+.song-artist:hover{
+    text-decoration: underline;
+}
+.volume-b{
+    margin: 0 1rem;
+    margin-left: 0.3rem;
+}
+.c-icons{
+    transform: scale(0.9);
+    opacity: 0.6;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.fa-camera-retro{
+    margin-left: -5px;
+    margin-right: 7px;
+}
+.volume{
+    appearance: none;
+    background-color: transparent;
+}
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 1rem;
+    margin-top: -13px;
+    cursor: pointer;
+}
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+.c-icons:hover{
+    opacity: 1;
+}
+.volume::-webkit-slider-runnable-track:hover{
+    background-color: #1bd760;
+    box-shadow: 5px 5px 8px #1bd760;
+}
+.main-content::-webkit-scrollbar{
+    appearance: none;
+    background-color: transparent;
+    width: 0.85rem;
+}
+.main-content::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.main-content::-webkit-scrollbar-thumb{
+    background-color: #232323;
+}
+@media (max-width:950px){
+    .controls{
+        display: none;
+    }
+    .playback{
+        width: 300px;
+    }
+}
+@media (max-width:640px){
+    .playback{
+        width: 200px;
+    }
+}
+@media (max-width:580px){
+    .album .song-dets{
+        display: none;
+    }
+    .album i{
+        display: none;
+    }
+    .music-player{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:420px){
+    .album{
+        display: none;
+    }
+    .music-player{
+        justify-content: center;
+    }
+}
+.spotify{
+    transform: scale(0.35);
+    margin-top: -170px;
+    margin-bottom: -45px;
+    margin-left: 65px;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.card-title{
+    margin-top: -4px;
+}
+.spotify:hover{
+    opacity: 1;
+}
+button{
+    cursor: pointer;
+}
